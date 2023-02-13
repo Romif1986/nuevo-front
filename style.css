@@ -16,3 +16,15 @@ i.fa-brands.fa-facebook.fa-2x.text-white:hover{
 i.fa-solid.fa-user-lock.fa-2x.text-white:hover{
     background-color:rgb(223, 137, 234) ;
 }
+section.banner{
+    background-image: url(./img/banner4.jpg);
+    width: -100px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+h1.intro{
+    padding-top: 15%;
+    font-size: 3rem;
+}
