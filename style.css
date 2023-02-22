@@ -45,3 +45,17 @@ footer.bg-violet{
     box-shadow: 5px 50px 20px rgb(12, 12, 12);
    
 }
+.login{
+    height: 70vh;
+}
+.formulario-login{
+    margin-top: 10%;
+    
+}
+
+.registro{
+    height: 70vh;
+}
+.formulario-registro{
+    margin-top: 10%;
+}
