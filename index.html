@@ -13,7 +13,7 @@
 </head>
 <body>
   
-   <nav class="navbar navbar-expand-lg bg-violet">
+   <nav class="navbar navbar-expand-sm bg-violet">
         <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
             <img src="./img/argprog.png" alt="logo" class="w-150">
@@ -30,10 +30,54 @@
 <main class="colorLila">
       <!--SECCION BANNER-->
       <section class="banner">
-        <h1 class="text-white text-center intro">Bienvenido a mi Portfolio<br> Romina Figueroa<br> </h1>
-        <h2 class="text-white text-center intro">Desarrollador Full Stack Jr.</h2>
-      </section>
-       
+        <!--boton modificar imagen banner-->
+        <button type="button" class="btn btn-close-white" data-bs-toggle="modal" data-bs-target="#banner"><i class="fa-solid fa-pencil"></i>
+        </button>
+        <div class="modal fade" id="banner" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="banner">Seleccione un nuevo Banner</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input class="form-control" type="file" id="banner">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fin de boton modificar imagen banner-->
+        
+        <!--Titulo personal banner-->
+        <h1 class="text-white text-center intro">Bienvenido a mi Portfolio<br> Romina Figueroa </h1>          
+        <h2 class="text-white text-center intro">Desarrollador Full Stack Jr. 
+          <!--boton modifica descripcion de banner-->
+          <button type="button" class="btn btn-close-white" data-bs-toggle="modal" data-bs-target="#boton-desc"><i class="fa-solid fa-pencil"></i>
+          </button>
+            <div class="modal fade" id="boton-desc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="boton-desc">Descripción</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <textarea class="form-control" placeholder="" id="boton-desc" style="height:100px;"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Modificar</button>
+                  </div>
+                </div>
+              </div>
+            </div>      
+          </h2>      
+          <!--fin de boton-->        
+      </section>       
         
 
       <!--SECCION PRESENTACION-->
@@ -42,12 +86,54 @@
           <div class="row">
             <div class="col-3">
               <img src="./img/perfil 2.JPG" alt="foto perfil" class="rounded-circle " >
+             <!--boton modificar foto perfil-->
+              <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#img-perfil"><i class="fa-solid fa-pencil"></i>
+              </button>
+              <div class="modal fade" id="img-perfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="img-perfil">Seleccione una nueva imagen</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input class="form-control" type="file" id="img-perfil">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Agregar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!--fin boton-->   
             </div>
             <div class="col-9 ">
               <h4 class="mt-2" text-black>Acerca de mi:</h4> 
-              <h5><br> Soy una persona proactiva, me gustan los desafíos y aprender cosas nuevas para poder desarrollarme profesionalmente.<br> 
+               <h5><br> Soy una persona proactiva, me gustan los desafíos y aprender cosas nuevas para poder desarrollarme profesionalmente.<br> 
                 Me gusta colaborar y trabajar en equipo, ya que de diferentes ideas se pueden realizar proyectos interesantes.
                 <br>Estoy comenzando en este mundo de la programación y me encanta.
+                <!--boton modificar texto-->
+                <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#boton-info"><i class="fa-solid fa-pencil"></i>
+                </button>
+                  <div class="modal fade" id="boton-info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="boton-info">Acerca de mi</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <textarea class="form-control" placeholder="" id="boton-info" style="height:100px;"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Modificar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                <!--fin boton-->
               </h5>
             </div>
           </div>
@@ -58,18 +144,60 @@
       <section class="experiencia mt-5">
         <div class="container text-center">
           <div class="row">
-            <div class="col-9">
-              <br><br><br><h4 class="mt-2" text-black>Experiencia Laboral:</h4> 
-              <h5><br> Empleada en Ecos Diarios S.A.E.C.I. S.A. Administrativa (Tesorera).
+            <div class="col-8">
+                <br><br><br><h4 class="mt-2" text-black>Experiencia Laboral:</h4>              
+                <br><h5> Empleada en Ecos Diarios S.A.E.C.I. S.A. Administrativa (Tesorera).
                 <br>Manejo de cajas. Pago a proveedores. Facturación.<br> Transacciones
                 bancarias. 
                 <br><br>Empleada en ANAFER S.A. Administración, atención al cliente,<br> facturación, control de cajas.
-                
+                <!--boton modificar experiencia-->
+                <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#boton-exp"><i class="fa-solid fa-pencil"></i>
+                </button>
+                  <div class="modal fade" id="boton-exp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="boton-exp">Experiencia Laboral</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <textarea class="form-control" placeholder="" id="boton-exp" style="height:100px;"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-warning">Modificar</button>
+                          <button type="button" class="btn btn-success">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--fin boton-->
               </h5>
             </div>
             <div class="col-2 ">
-              <br><br><img src="./img/imagen 2.jfif" alt="experiencia" class="mt-5" >
-            
+              <br><br><img src="./img/imagen 2.jfif" alt="foto-exp" class="mt-5" >
+              <!--boton modifica imagen de experiencia laboral-->
+              <div align="end"><button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#foto-exp"><i class="fa-solid fa-pencil"></i>
+              </button></div>
+              <div class="modal fade" id="foto-exp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="foto-exp">Seleccione una nueva Imagen</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input class="form-control" type="file" id="foto-exp">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Agregar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--fin boton-->
+        
             </div>
           </div>
         </div>
@@ -81,13 +209,57 @@
     <div class="row">
       <div class="col-3">
         <br><br><br><br><img src="./img/Educacion.png" alt="foto perfil" class=" " >
+        <!--boton modifica imagen educacion-->
+        <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#foto-edu"><i class="fa-solid fa-pencil"></i>
+        </button>
+        <div class="modal fade" id="foto-edu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="foto-edu">Seleccione una nueva Imagen</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input class="form-control" type="file" id="foto-edu">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!--fin boton-->
       <div class="col-9 ">
-        <br><br><br><br><h4 class="mt-2" text-black>Educación:</h4> 
+        <br><br><br><br><h4 class="mt-2" text-black>Educación:</h4>
+        
         <h5><br> Primaria – Esc. Nº 19 – Capital Federal
           <br><br>Polimodal con orientación en Ciencias Naturales – Esc. E.E.M.Nº 8 –
           Necochea.
           <br><br> Estudiante de programación Full Stack Jr. Argentina Programa 4.0
+          <!--boton modificar educacion-->
+          <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#boton-edu"><i class="fa-solid fa-pencil"></i>
+          </button>
+            <div class="modal fade" id="boton-edu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="boton-edu">Educación</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <textarea class="form-control" placeholder="" id="boton-edu" style="height:100px;"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning">Modificar</button>
+                    <button type="button" class="btn btn-success">Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fin boton-->
         </h5>
       </div>
     </div>
@@ -96,7 +268,28 @@
 
 <!--CARRUSEL CERTIFICADOS-->
 <section class="CERTIFICADO mt-5"  >
-  <br><br><br><h4 class="text-center" text-black>Certificados:</h4>
+  <br><br><br><h4 class="text-center" text-black>Certificados:
+  <!--boton agregar certificados-->
+  <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#img-cert"><i class="fa-solid fa-pencil"></i>
+  </button>
+  <div class="modal fade" id="img-cert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="img-cert">Seleccione un archivo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input class="form-control" type="file" id="img-cert">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Agregar</button></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--fin boton-->
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active ">
@@ -114,7 +307,31 @@
 <section class="Hard  mt-5">
   <div class="container text-center">
 <div class="Hard & Soft Skill">
-  <h4 class="mt-2" text-black>Hard & Soft Skill:</h4>
+  <h4 class="mt-2" text-black>Hard & Soft Skill:
+    <!--boton hard y porcentaje-->
+    <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#boton-hard"><i class="fa-solid fa-pencil"></i>
+    </button>
+    <div class="modal fade" id="boton-hard" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <label for="hardUno" class="form-label">Hard & Soft Skill</label>
+              <input type="text" class="form-control" id="boton-hard">
+          </div>
+          <div class="modal-body">
+            <label for="boton-hard" class="form-label">Porcentaje</label>
+            <input type="text" class="form-control" id="boton-hard">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Agregar</button></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </h4>
+  <!--fin boton-->
+   
   <br><br> <h5 class="mt-2" text-black>HTML</h5>
   <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: 50%" aria-valuenow="10" aria-valuemin="75" aria-valuemax="100"></div>
 </div>
@@ -152,23 +369,48 @@
 
 <!--PROYECTOS-->
 <section>
-  <h2 class="text-center mt-5">Proyectos</h2>
-  <div class="card-body">
-    <img src="./img/proyecto1.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title text-white">Muebles para el hogar</h5>
+  <h2 class="text-center mt-5">Proyectos
+    
+    <!--boton modifica proyectos-->
+    <button type="button" class="btn btn-close-black" data-bs-toggle="modal" data-bs-target="#img-proy"><i class="fa-solid fa-plus"></i>
+    </button>
+    <div class="modal fade" id="img-proy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="img-proy">Seleccione un archivo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" type="file" id="img-proy">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Agregar</button></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </h2>
+  <!--fin boton-->
+ 
+  <div class="card-body mt-5">
+    <div align="center"><img src="./img/proyecto1.png" class="card-img-top" alt=""></div>
+    <div class="card-body ">
+      <h5 class="card-title text-white text-center">Muebles para el hogar</h5>
       <p class="card-text"></p>
-      <a href="https://corfam.com/sillones/" class="btn btn-primary">Ir</a>
+      <div align="center"><a href="https://corfam.com/sillones/" class="btn btn-primary">Ir</a></div>
     </div>
   </div>
     <br><div class="card2" >
-      <img src="./img/proyecto2.png" class="card-img-top" alt="...">
+      <div align="center"><img src="./img/proyecto2.png" class="card-img-top" alt="..."></div>
       <div class="card-body">
-        <h5 class="card-title text-white">Traductor</h5>
+        <h5 class="card-title text-white text-center">Traductor</h5>
         <p class="card-text"></p>
-        <a href="https://www.ingles.com/traductor" class="btn btn-primary">Ir</a>
+        <div align="center"><a href="https://www.ingles.com/traductor" class="btn btn-primary">Ir</a></div>
       </div>
-     </div>
+   
+    </div>
     </section>
    
    

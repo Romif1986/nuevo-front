@@ -19,10 +19,9 @@ i.fa-solid.fa-user-lock.fa-2x.text-white:hover{
 section.banner{
     background-image: url(./img/banner4.jpg);
     width: -100px;
-    height: 100vh;
     background-repeat: no-repeat;
-    position:relative;
-    background-size:contain;
+   
+
 }
 h1.intro{
     padding-top: 15%;
@@ -181,6 +180,9 @@ a, a:hover{
 
 footer.bg-violet{
     width: 100%;
+    
+}
+
     
 }
 >>>>>>> 86fcc40e0798354ee41803dee851036bf1b545ad
